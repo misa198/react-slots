@@ -18,6 +18,12 @@ yarn add @misa198/react-slots
 
 # Usage
 
+<a href="https://stackblitz.com/edit/react-slots-misa198?file=README.md">
+<img src="https://raw.githubusercontent.com/misa198/react-slots/master/docs/stackblitz.png?token=GHSAT0AAAAAACII7MLHIZZWZOOOS6NS733CZKBF5XA" width="200">
+</a>
+
+<br />
+
 ```ts
 // Parent.tsx
 
@@ -25,15 +31,15 @@ import { Slot, useSlots } from '@misa198/react-slots';
 import { PropsWithChildren } from 'react';
 
 export default ({ children }: PropsWithChildren) => {
-  const slots = useSlots(children);
+const slots = useSlots(children);
 
-  return (
-    <div>
-      <Slot {...slots.slot1} />
-      <Slot {...slots.slot2} />
-      <Slot {...slots.slot3} />
-    </div>
-  );
+return (
+<div>
+<Slot {...slots.slot1} />
+<Slot {...slots.slot2} />
+<Slot {...slots.slot3} />
+</div>
+);
 };
 
 ```

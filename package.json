@@ -1,6 +1,6 @@
 {
   "name": "@misa198/react-slots",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple react component that uses slots to render children",
   "author": "Thanh Vu <misa198>",
   "license": "MIT",
