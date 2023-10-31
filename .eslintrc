@@ -1,6 +1,11 @@
 {
   "extends": ["airbnb", "airbnb-typescript/base", "airbnb/hooks", "prettier"],
   "parserOptions": {
-    "project": "./tsconfig.json"
+    "project": "./tsconfig.eslint.json"
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": "off",
+    "import/extensions": "off",
+    "import/prefer-default-export": "off"
   }
 }
