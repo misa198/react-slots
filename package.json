@@ -1,6 +1,6 @@
 {
   "name": "@misa198/react-slots",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple react component that uses slots to render children",
   "author": "Thanh Vu <misa198>",
   "license": "MIT",
@@ -13,7 +13,8 @@
   "types": "dist/types.d.ts",
   "scripts": {
     "build": "rollup -c --bundleConfigAsCjs",
-    "lint": "eslint src --ext .ts,.tsx"
+    "lint": "eslint src --ext .ts,.tsx --max-warnings 0 --cache",
+    "postinstall": "husky install"
   },
   "keywords": [
     "react",
@@ -27,6 +28,8 @@
     "@babel/preset-env": "^7.23.2",
     "@babel/preset-react": "^7.22.15",
     "@babel/preset-typescript": "^7.23.2",
+    "@commitlint/cli": "^18.2.0",
+    "@commitlint/config-conventional": "^18.1.0",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.5",
@@ -41,6 +44,8 @@
     "eslint-plugin-jsx-a11y": "6.5.1",
     "eslint-plugin-react": "7.28.0",
     "eslint-plugin-react-hooks": "4.3.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2",
     "prettier": "^3.0.3",
     "rollup": "^4.2.0",
     "rollup-plugin-dts": "^6.1.0",

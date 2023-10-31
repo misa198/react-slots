@@ -33,13 +33,13 @@ import { PropsWithChildren } from 'react';
 export default ({ children }: PropsWithChildren) => {
 const slots = useSlots(children);
 
-return (
-<div>
-<Slot {...slots.slot1} />
-<Slot {...slots.slot2} />
-<Slot {...slots.slot3} />
-</div>
-);
+  return (
+    <div>
+      <Slot {...slots.slot1} />
+      <Slot {...slots.slot2} />
+      <Slot {...slots.slot3} />
+    </div>
+  );
 };
 
 ```
@@ -53,13 +53,13 @@ import { useState } from 'react';
 export default () => (
   <Parent>
     <SlotWrapper name="slot1">
-      Slot 1
+      <div>Slot 1</div>
     </SlotWrapper>
     <SlotWrapper name="slot2">
-      Slot 2
+      <div>Slot 2</div>
     </SlotWrapper>
     <SlotWrapper name="slot3">
-      Slot 3
+      <div>Slot 3</div>
     </SlotWrapper>
   </Parent>
 );
