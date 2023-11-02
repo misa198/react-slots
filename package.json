@@ -1,6 +1,6 @@
 {
   "name": "@misa198/react-slots",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple react component that uses slots to render children",
   "author": "Thanh Vu <misa198>",
   "license": "MIT",
@@ -13,8 +13,7 @@
   "types": "dist/types.d.ts",
   "scripts": {
     "build": "rollup -c --bundleConfigAsCjs",
-    "lint": "eslint src --ext .ts,.tsx --max-warnings 0 --cache",
-    "postinstall": "husky install"
+    "lint": "eslint src --ext .ts,.tsx --max-warnings 0 --cache"
   },
   "keywords": [
     "react",
