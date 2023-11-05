@@ -65,3 +65,11 @@ export default () => (
 );
 
 ```
+
+### Server Side Rendering
+
+`SlotWrapper` components must be children of the component when rendered. With the above example:
+
+- If `App.tsx` is the server side component and `Parent.tsx` is the client side component, the `Slot` components will not be rendered.
+
+- If both `App.tsx` and `Parent.tsx` are server side components or client side components, the `Slot` components will be rendered.

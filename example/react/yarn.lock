@@ -411,8 +411,8 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@misa198/react-slots@file:..":
-  version "1.0.0"
+"@misa198/react-slots@file:../..":
+  version "1.0.4"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
